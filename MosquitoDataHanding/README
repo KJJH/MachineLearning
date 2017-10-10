@@ -1,0 +1,26 @@
+[ Mosquito Data Handling ]
+
+이 프로젝트는 원시 모기 데이터와 날씨 데이터를 가공하여 만든 데이터를 이용하여 영등포구 지역의 모기 활동성을 예측하는 프로젝트입니다. 
+
+
+ - MosquitoData : 지역별 모기 데이터들이 들어있습니다.
+
+ - Crawling.py  : 기상 데이터를 크롤링하는 소스코드입니다.
+		  이 코드를 실행하기 위해서는 chromedriver.exe 파일이 필요합니다.
+
+ - Merge.py     : 기상 데이터와 모기 데이터를 통합하는 소스코드입니다.
+
+ - Mosquito.py  : 모기 데이터를 처리하는 소스코드입니다.
+
+ - RandomForest.py : 데이터 학습을 위한 소스코드입니다.
+
+ - Weather.py   : 기상 데이터를 처리하는 소스코드입니다.
+
+
+실행을 위해서는
+
+   Crawling.py -> Weather.py -> Mosquito.py -> Merge.py -> RandomForest.py
+
+순서로 실행시키면 됩니다.
+
+실행을 시키면 각 파일별로 csv 형태의 데이터파일들이 생성됩니다.
